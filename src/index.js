@@ -8,12 +8,13 @@ const {
   REMOTE_HOST, REMOTE_USER,
   REMOTE_PORT, SSH_PRIVATE_KEY, DEPLOY_KEY_NAME,
   SOURCE, TARGET, ARGS, EXCLUDE,
+  SSH_CMD_ARGS,
   GITHUB_WORKSPACE
 } = require('./inputs');
 
 const defaultOptions = {
   ssh: true,
-  sshCmdArgs: ['-o StrictHostKeyChecking=no'],
+  sshCmdArgs: SSH_CMD_ARGS,
   recursive: true
 };
 
