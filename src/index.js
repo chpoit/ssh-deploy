@@ -18,6 +18,8 @@ const defaultOptions = {
   recursive: true
 };
 
+console.log("SSH args", SSH_CMD_ARGS, SSH_CMD_ARGS?.split(","));
+
 console.log('[general] GITHUB_WORKSPACE: ', GITHUB_WORKSPACE);
 
 const sshDeploy = (() => {
