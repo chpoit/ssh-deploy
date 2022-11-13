@@ -32,9 +32,9 @@ inputs:
     required: false
     default: ""
   SSH_CMD_ARGS:
-    description: "An Array of ssh arguments, they must be prefixed with -o"
+    description: "An Array of ssh arguments, they must be prefixed with -o and separated by a comma"
     required: false
-    default: ["-o StrictHostKeyChecking=no"]
+    default: "-o StrictHostKeyChecking=no"
 outputs:
   status:
     description: "Status"

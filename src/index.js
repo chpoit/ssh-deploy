@@ -14,7 +14,7 @@ const {
 
 const defaultOptions = {
   ssh: true,
-  sshCmdArgs: SSH_CMD_ARGS,
+  sshCmdArgs: SSH_CMD_ARGS?.split(','),
   recursive: true
 };
 
